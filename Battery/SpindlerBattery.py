@@ -11,4 +11,4 @@ class SpindlerBattery(Car, ABC):
         self.last_service_date = datetime.strptime(last_service_date, '%Y-%m-%d').date()
 
     def battery_should_be_serviced(self):
-        return (self.current_date - self.last_service_date).days > 730
+        return (self.current_date - self.last_service_date).days > 1460
